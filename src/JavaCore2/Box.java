@@ -3,8 +3,8 @@ package JavaCore2;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class Box <F> {
-    ArrayList<F> fruits = new ArrayList();
+public class Box <T extends Fruit> {
+    ArrayList<T> fruits = new ArrayList();
     private float weightFruit;
 
 
@@ -20,13 +20,12 @@ public class Box <F> {
         return getBoxWeight() == anotherBox.getBoxWeight();
     }
 
-    public void addFruit(F fruit) {
+    public void addFruit(T fruit) {
         fruits.add(fruit);
     }
-    public void transfer(Box<F> anotherBox){
-        this.fruits.addAll((Collection<? extends F>) anotherBox.fruits);
-        anotherBox.fruits.clear();
+
+
+    public void transfer(Box<T> anotherBox) {
+        this.fruits.addAll(anotherBox.fruits);
     }
-
-
 }
