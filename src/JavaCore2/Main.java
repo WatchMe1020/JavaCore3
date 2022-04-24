@@ -21,6 +21,7 @@ public class Main {
             orangeBox.addFruit(new Orange());
         }
         box1.transfer(box3);
+
         System.out.println("----------------------------------------------------------");
         System.out.println("Вес ящика с яблоками: " + appleBox.getBoxWeight());
         System.out.println("----------------------------------------------------------");
