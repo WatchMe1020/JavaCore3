@@ -26,5 +26,6 @@ public class Main {
         System.out.println("----------------------------------------------------------");
         System.out.println("Пересыпания ящиков: " + orangeBox.compare(appleBox));
         System.out.println("----------------------------------------------------------");
+
     }
 }
