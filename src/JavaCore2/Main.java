@@ -16,7 +16,7 @@ public class Main {
         for(int i = 0; i < 20;i++){
             orangeBox.addFruit(new Orange());
         }
-        System.out.println("tes");
+
         System.out.println("----------------------------------------------------------");
         System.out.println("Вес ящика с яблоками: " + appleBox.getBoxWeight());
         System.out.println("----------------------------------------------------------");
@@ -26,6 +26,5 @@ public class Main {
         System.out.println("----------------------------------------------------------");
         System.out.println("Пересыпания ящиков: " + orangeBox.compare(appleBox));
         System.out.println("----------------------------------------------------------");
-
     }
 }

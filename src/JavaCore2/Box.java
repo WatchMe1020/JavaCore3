@@ -22,6 +22,7 @@ public class Box <F> {
 
     public void addFruit(F fruit) {
         fruits.add(fruit);
+
     }
     public void transfer(Box<F> anotherBox){
         this.fruits.addAll((Collection<? extends F>) anotherBox.fruits);
